@@ -1,0 +1,11 @@
+@import './styles/typography.scss';
+
+.app_heading {
+  @extend %typographyTypeOne;
+}
+.app_heading2 {
+  @extend %typographyTypeTwo;
+}
+.app_heading3 {
+  @extend %typographyTypeTree;
+}
