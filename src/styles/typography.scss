@@ -6,110 +6,308 @@
   font-weight: 700;
   font-size: 48px;
   line-height: 56px;
-  color: $darkestInk;
 }
+
 %typographyTypeTwo {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 36px;
-  color: $darkestInk;
 }
+
 %typographyTypeThree {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
-  color: $darkestInk;
 }
-//
-%largeTypeOne {
+
+%typographyTypeLargeOne {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+%typographyTypeLargeTwo {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 18px;
+  line-height: 18px;
 }
-%largeTypeTwo {
+
+%typographyTypeLargeThree {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+%typographyTypeLargeFour {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
 }
-%largeTypeThree {
+
+%typographyTypeLargeFive {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+%typographyTypeLargeSix {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+%typographyTypeLargeSeven {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
 }
-//
 
-%regularTypeOne {
+%typographyTypeLargeEight {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+%typographyTypeLargeNine {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+%typographyTypeRegularOne {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%typographyTypeRegularTwo {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
 }
-%regularTypeTwo {
+
+%typographyTypeRegularThree {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+%typographyTypeRegularFour {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
-%regularTypeThree {
+
+%typographyTypeRegularFive {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+%typographyTypeRegularSix {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+%typographyTypeRegularSeven {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+%typographyTypeRegularEight {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 }
-//
-%smallTypeOne {
+
+%typographyTypeRegularNine {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+%typographyTypeSmallOne {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
 }
-%smallTypeTwo {
+
+%typographyTypeSmallTwo {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+%typographyTypeSmallThree {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+%typographyTypeSmallFour {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
 }
-%smallTypeThree {
+
+%typographyTypeSmallFive {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+%typographyTypeSmallSix {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+%typographyTypeSmallSeven {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+%typographyTypeSmallEight {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
 }
-//
-%tinyTypeOne {
+
+%typographyTypeSmallNine {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+%typographyTypeTinyOne {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+%typographyTypeTinyTwo {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
 }
-%tinyTypeTwo {
+
+%typographyTypeTinyThree {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+%typographyTypeTinyFour {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+%typographyTypeTinyFive {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
 }
-%tinyTypeThree {
+
+%typographyTypeTinySix {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+%typographyTypeTinySeven {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+%typographyTypeTinyEight {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+%typographyTypeTinyNine {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 16px;
 }

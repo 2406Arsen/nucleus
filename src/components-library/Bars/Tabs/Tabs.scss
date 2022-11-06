@@ -1,0 +1,28 @@
+@import '../../../styles/colors.scss';
+@import '../../../styles/typography.scss';
+
+%tabBaseStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  background-color: getColor('--backgroundPrimary');
+  @extend %typographyTypeSmallSix;
+}
+
+.tabs {
+  width: 375px;
+  height: 48px;
+  display: grid;
+  list-style-type: none;
+  &__tab {
+    @extend %tabBaseStyle;
+    color: getColor(--textPrimary);
+    
+    &--active {
+      @extend %tabBaseStyle;
+      color: getColor(--textPrimaryActive);
+      border-bottom: 1px solid getColor(--textPrimaryActive);
+    }
+  }
+}

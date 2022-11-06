@@ -5,45 +5,71 @@ $darkInk: #303437;
 $darkerInk: #202325;
 $darkestInk: #090a0a;
 
-$lightestSky: #F7F9FA;
-$lighterSky: #F2F4F5;
-$lightSky: #E3E5E6;
-$baseSky: #CDCFD0;
-$darkSky: #979C9E;
+$lightestSky: #f7f9fa;
+$lighterSky: #f2f4f5;
+$lightSky: #e3e5e6;
+$baseSky: #cdcfd0;
+$darkSky: #979c9e;
 
+$lightestPrimary1: #e7e7ff;
+$lighterPrimary1: #c6c4ff;
+$lightPrimary1: #9990ff;
+$basePrimary1: #6b4eff;
+$darkestPrimary1: #5538ee;
 
-$lightestPrimary1: #E7E7FF;
-$lighterPrimary1: #C6C4FF;
-$lightPrimary1: #9990FF;
-$basePrimary1: #6B4EFF;
-$darkestPrimary1: #5538EE;
-
-$lightestRed: #FFE5E5;
-$lighterRed: #FF9898;
-$lightRed: #FF6D6D;
-$baseRed: #FF5247;
-$darkestRed: #D3180C;
-
-$lightestGreen: #ECFCE5;
-$lighterGreen: #7DDE86;
-$lightGreen: #4CD571;
-$baseGreen: #23C16B;
+$lightestRed: #ffe5e5;
+$lighterRed: #ff9898;
+$lightRed: #ff6d6d;
+$baseRed: #ff5247;
+$darkestRed: #d3180c;
+$lightestGreen: #ecfce5;
+$lighterGreen: #7dde86;
+$lightGreen: #4cd571;
+$baseGreen: #23c16b;
 $darkestGreen: #198155;
-
-$lightestYellow: #FFEFD7;
-$lighterYellow: #FFD188;
-$lightYellow: #FFC462;
-$baseYellow: #FFB323;
-$darkestYellow: #A05E03;
-
-$lightestPrimary2: #C9F0FF;
-$lighterPrimary2: #9BDCFD;
-$lightPrimary2: #6EC2FB;
-$basePrimary2: #48A7F8;
-$darkestPrimary2: #0065D0;
-
+$lightestYellow: #ffefd7;
+$lighterYellow: #ffd188;
+$lightYellow: #ffc462;
+$baseYellow: #ffb323;
+$darkestYellow: #a05e03;
+$lightestPrimary2: #c9f0ff;
+$lighterPrimary2: #9bdcfd;
+$lightPrimary2: #6ec2fb;
+$basePrimary2: #48a7f8;
+$darkestPrimary2: #0065d0;
 $baseFacebook: #0078ff;
 $darkFacebook: #0067db;
+$baseTwitter: #1da1f2;
+$darkTwitter: #0c90e1;
 
-$baseTwitter: #1DA1F2;
-$darkTwitter: #0C90E1;
+$theme-colors: (
+  textPrimary: $lightInk,
+  textPrimaryActive: $basePrimary1,
+  backgroundPrimary: #fff,
+);
+
+// Dark Theme Colors
+$dark-theme-colors: (
+  textPrimary: $darkSky,
+  textPrimaryActive: #ffffff,
+  backgroundPrimary: $darkestInk,
+);
+
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+@function getColor($color_name, $alpha: 1) {
+  @return rgba(var(#{$color_name}), $alpha);
+}
+
+:root {
+  @each $key, $color in $theme-colors {
+    --#{$key}: #{hexToRGB($color)};
+  }
+
+  &[data-theme="dark"] {
+    @each $key, $color in $dark-theme-colors {
+      --#{$key}: #{hexToRGB($color)};
+    }
+  }
+}
