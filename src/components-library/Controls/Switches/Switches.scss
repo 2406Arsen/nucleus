@@ -1,0 +1,48 @@
+@import '../../../styles/colors.scss';
+
+%switchCircle {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: -1.5px;
+
+  width: 35px;
+  height: 35px;
+  //   background-color: getColor(--switchCirclePrimary);
+
+  border-radius: 20px;
+  transform: scale(0.8);
+  transition: all 0.7s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+#switch[type='checkbox'] {
+  -webkit-appearance: none;
+  position: relative;
+  background-color: getColor(--switchBackgroundPrimary);
+  width: 56px;
+  height: 32px;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.4s ease;
+
+  &::before {
+    @extend %switchCircle;
+    background-color: getColor(--switchCirclePrimary);
+  }
+  &:disabled::before {
+    @extend %switchCircle;
+    background-color: gold;
+  }
+  &:disabled:checked {
+    background-color: red;
+  }
+  &:checked {
+    background-color: getColor(--switchBackgroundPrimaryActive);
+    &::before {
+      background-color: #fff;
+      left: 21px;
+    }
+  }
+}

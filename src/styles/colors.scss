@@ -7,7 +7,7 @@ $darkestInk: #090a0a;
 
 $lightestSky: #f7f9fa;
 $lighterSky: #f2f4f5;
-$lightSky: #e3e5e6;
+$lightSky: #e3e5e5;
 $baseSky: #cdcfd0;
 $darkSky: #979c9e;
 
@@ -45,13 +45,19 @@ $darkTwitter: #0c90e1;
 $theme-colors: (
   textPrimary: $lightInk,
   textPrimaryActive: $basePrimary1,
+  switchBackgroundPrimaryActive: $basePrimary1,
+  switchBackgroundPrimary: $lightSky,
+  switchCirclePrimary: #fff,
   backgroundPrimary: #fff,
 );
 
 // Dark Theme Colors
 $dark-theme-colors: (
   textPrimary: $darkSky,
-  textPrimaryActive: #ffffff,
+  textPrimaryActive: #fff,
+  switchBackgroundPrimaryActive: $basePrimary1,
+  switchBackgroundPrimary: $lightInk,
+  switchCirclePrimary: #fff,
   backgroundPrimary: $darkestInk,
 );
 
@@ -67,7 +73,7 @@ $dark-theme-colors: (
     --#{$key}: #{hexToRGB($color)};
   }
 
-  &[data-theme="dark"] {
+  &[data-theme='dark'] {
     @each $key, $color in $dark-theme-colors {
       --#{$key}: #{hexToRGB($color)};
     }
